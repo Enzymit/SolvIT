@@ -1,0 +1,4 @@
+OUTDIR: "output"
+INPUTDIR: "example"
+SINGULARITY_PATH: "singularity"
+OUTFILENAME: "solvit_out.csv"

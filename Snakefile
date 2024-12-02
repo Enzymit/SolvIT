@@ -1,6 +1,5 @@
 configfile: 'config.yaml'
 DESIGNS, = glob_wildcards(config['INPUTDIR']+"/{design}.pdb")
-print(DESIGNS)
 rule all:
 	input: f"{config['OUTDIR']}/{config['OUTFILENAME']}"
 

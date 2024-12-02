@@ -10,8 +10,8 @@ if [ -f "$curscript_path/solvit.sif" ]; then
     read -p "solvit.sif already exists. Do you want to overwrite it? (y/n) " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-	wget https://enzymit-solvit-sif.s3.us-east-1.amazonaws.com/solvit.sif $curscript_path/solvit.sif
+	wget https://enzymit-solvit-sif.s3.us-east-1.amazonaws.com/solvit.sif -O $curscript_path/solvit.sif
     fi
 else
-    wget https://enzymit-solvit-sif.s3.us-east-1.amazonaws.com/solvit.sif $curscript_path/solvit.sif
+    wget https://enzymit-solvit-sif.s3.us-east-1.amazonaws.com/solvit.sif -O $curscript_path/solvit.sif
 fi
